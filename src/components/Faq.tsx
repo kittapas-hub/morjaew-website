@@ -1,4 +1,5 @@
 import { site } from '../config/site';
+import { DecorativeLayer } from './DecorativeLayer';
 
 const faqs = [
   {
@@ -29,7 +30,8 @@ const faqs = [
 
 export function Faq() {
   return (
-    <section className="section" id="faq">
+    <section className="section section--faq" id="faq">
+      <DecorativeLayer variant="faq" />
       <div className="container">
         <div className="section__head" style={{ textAlign: 'center' }}>
           <p className="section__eyebrow">คำถามที่พบบ่อย</p>

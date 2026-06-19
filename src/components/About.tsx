@@ -1,34 +1,51 @@
 import { site } from '../config/site';
+import { DecorativeLayer } from './DecorativeLayer';
 
-const badges = ['ศาสตร์จีนและโหงวเฮ้ง', `ประสบการณ์กว่า ${site.yearsExperience} ปี`, 'ปรึกษาส่วนตัวทางโทรศัพท์', 'ข้อมูลเป็นความลับ'];
+const badges = [
+  `ประสบการณ์กว่า ${site.yearsExperience} ปี`,
+  'ปรึกษาส่วนตัวทางโทรศัพท์/LINE',
+  'เหมาะกับเจ้าของกิจการและผู้ตัดสินใจเรื่องสำคัญ',
+  'ข้อมูลเป็นความลับ',
+];
 
 export function About() {
   return (
-    <section className="section" id="about">
+    <section className="section section--about" id="about">
+      <DecorativeLayer variant="about" />
       <div className="container about">
-        <img
-          className="about__portrait"
-          src="/morjaew-portrait.png"
-          alt="หมอแจว พ่อปู่โหรา ญาณหยั่งรู้"
-          loading="lazy"
-        />
-        <div>
-          <p className="section__eyebrow">รู้จักหมอแจว</p>
+        <div className="portrait-wrap">
+          <img
+            className="dragon-watermark about__dragon-watermark"
+            src="/decorations/dragon-watermark.png"
+            alt=""
+            aria-hidden="true"
+            loading="lazy"
+          />
+          <img className="about__mandala" src="/morjaew-mandala-ring.svg" alt="" aria-hidden="true" />
+          <img
+            className="about__portrait"
+            src="/morjaew-portrait.png"
+            alt="หมอแจว พ่อปู่โหรา ญาณหยั่งรู้"
+            loading="lazy"
+          />
+        </div>
+        <div className="about__content">
+          <p className="section__eyebrow">ความน่าเชื่อถือ</p>
           <h2 className="section__title">
-            {site.brand} {site.subtitle}
+            หมอแจวคือใคร และเหมาะกับใคร
           </h2>
           <p>
-            {site.brand} คือ {site.positioning} มีประสบการณ์ในการให้คำปรึกษามากกว่า{' '}
-            {site.yearsExperience} ปี
+            {site.brand} {site.subtitle} คือ {site.positioning} มีประสบการณ์ให้คำปรึกษามากกว่า{' '}
+            {site.yearsExperience} ปี โดยเน้นการดูจังหวะและแนวทางประกอบการตัดสินใจ ไม่ใช่เพียงการทำนายทั่วไป
           </p>
           <p>
-            แนวทางของหมอแจวไม่ได้เน้นเพียงการทำนาย แต่เป็นการชี้จังหวะชีวิต จุดที่ควรระวัง
-            และแนวทางในการตัดสินใจ โดยเฉพาะเรื่องการงาน การเงิน ธุรกิจ หุ้นส่วน บ้าน ที่ดิน
-            ความสัมพันธ์ และเรื่องสำคัญที่ต้องการมุมมองอย่างรอบด้าน
+            เหมาะกับผู้ประกอบการ เจ้าของกิจการ คนทำงานที่กำลังเปลี่ยนเส้นทาง
+            หรือคนที่มีเรื่องสำคัญต้องตัดสินใจ เช่น งาน เงิน ธุรกิจ หุ้นส่วน ความสัมพันธ์ บ้าน ที่ดิน
+            และช่วงชีวิตที่ต้องการมุมมองรอบด้านก่อนเดินต่อ
           </p>
           <p>
-            การปรึกษาเป็นแบบส่วนตัวทางโทรศัพท์ สามารถใช้รูปถ่ายใบหน้าประกอบการดูโหงวเฮ้งได้
-            โดยไม่จำเป็นต้องทราบเวลาเกิด
+            การปรึกษาเป็นแบบส่วนตัวทางโทรศัพท์/LINE ทีมงานช่วยจัดคิวและดูแลขั้นตอนเบื้องต้น
+            สามารถใช้รูปถ่ายใบหน้าประกอบการดูโหงวเฮ้งได้ โดยไม่จำเป็นต้องทราบเวลาเกิด
           </p>
           <div className="about__badges">
             {badges.map((b) => (

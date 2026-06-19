@@ -2,10 +2,9 @@ import { Header } from '../components/Header';
 import { Hero } from '../components/Hero';
 import { QuickMenu } from '../components/QuickMenu';
 import { About } from '../components/About';
+import { ExperienceGallery } from '../components/ExperienceGallery';
 import { Pillars } from '../components/Pillars';
 import { Pricing } from '../components/Pricing';
-import { Process } from '../components/Process';
-import { TrustPrivacy } from '../components/TrustPrivacy';
 import { Testimonials } from '../components/Testimonials';
 import { Faq } from '../components/Faq';
 import { FinalCta } from '../components/FinalCta';
@@ -20,13 +19,14 @@ export function Home() {
         <Hero />
         <QuickMenu />
         <About />
-        <Pillars />
-        <Pricing />
-        <Process />
-        <TrustPrivacy />
+        <ExperienceGallery />
+        <img className="section-divider" src="/morjaew-lotus-divider.svg" alt="" aria-hidden="true" />
         <Testimonials />
-        <Faq />
+        <img className="section-divider" src="/morjaew-lotus-divider.svg" alt="" aria-hidden="true" />
+        <Pillars />
         <FinalCta />
+        <Pricing />
+        <Faq />
       </main>
       <Footer />
       <StickyCta />

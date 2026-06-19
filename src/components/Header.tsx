@@ -2,10 +2,11 @@ import { site } from '../config/site';
 import { LineButton } from './LineButton';
 
 const navLinks = [
-  { href: '#about', label: 'รู้จักหมอแจว' },
+  { href: '#consult', label: 'เรื่องที่ปรึกษาได้' },
+  { href: '#about', label: 'ความน่าเชื่อถือ' },
+  { href: '#reviews', label: 'รีวิว' },
   { href: '#pillars', label: 'บริการ' },
-  { href: '#pricing', label: 'ราคา' },
-  { href: '#process', label: 'ขั้นตอน' },
+  { href: '#booking-cta', label: 'จองคิว' },
   { href: '#faq', label: 'คำถามที่พบบ่อย' },
 ];
 
@@ -14,9 +15,7 @@ export function Header() {
     <header className="header">
       <div className="container header__inner">
         <a className="brand" href="#top">
-          <span className="brand__seal" aria-hidden="true">
-            แจว
-          </span>
+          <img className="brand__logo" src="/logo-mohjaew.jpg" alt="หมอแจว" />
           <span>
             <span className="brand__name">{site.brand}</span>{' '}
             <span className="brand__sub">{site.subtitle}</span>

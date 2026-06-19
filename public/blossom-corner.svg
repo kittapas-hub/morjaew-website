@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 280">
+  <defs>
+    <g id="b">
+      <ellipse rx="5" ry="8.5" fill="#f4b0c4" opacity=".78"/>
+      <ellipse rx="5" ry="8.5" fill="#f4b0c4" opacity=".78" transform="rotate(72)"/>
+      <ellipse rx="5" ry="8.5" fill="#f4b0c4" opacity=".78" transform="rotate(144)"/>
+      <ellipse rx="5" ry="8.5" fill="#f4b0c4" opacity=".78" transform="rotate(216)"/>
+      <ellipse rx="5" ry="8.5" fill="#f4b0c4" opacity=".78" transform="rotate(288)"/>
+      <circle r="3.2" fill="#ffe08a"/>
+    </g>
+  </defs>
+  <!-- main branch: top-left corner spreading diagonally -->
+  <path d="M8 8 Q55 62 95 112 Q135 162 178 222" stroke="#c09068" stroke-width="4.5" fill="none" stroke-linecap="round" opacity=".48"/>
+  <!-- sub branch 1: up-right from midpoint -->
+  <path d="M95 112 Q120 82 148 76" stroke="#c09068" stroke-width="3" fill="none" stroke-linecap="round" opacity=".42"/>
+  <!-- sub branch 2: small twig up-left from early bend -->
+  <path d="M55 62 Q36 86 47 108" stroke="#c09068" stroke-width="2.5" fill="none" stroke-linecap="round" opacity=".40"/>
+  <!-- sub branch 3: lower twig -->
+  <path d="M135 162 Q165 144 170 165" stroke="#c09068" stroke-width="2" fill="none" stroke-linecap="round" opacity=".36"/>
+  <!-- flower clusters along branch -->
+  <use href="#b" transform="translate(54,64)"/>
+  <use href="#b" transform="translate(44,109) scale(.72)"/>
+  <use href="#b" transform="translate(97,114)"/>
+  <use href="#b" transform="translate(148,78) scale(.82)"/>
+  <use href="#b" transform="translate(163,168) scale(.68)"/>
+  <use href="#b" transform="translate(179,224) scale(.75)"/>
+  <use href="#b" transform="translate(120,92) scale(.60)"/>
+  <use href="#b" transform="translate(30,42) scale(.55)"/>
+</svg>

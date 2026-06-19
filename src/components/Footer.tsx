@@ -1,8 +1,10 @@
 import { site, disclaimer } from '../config/site';
+import { DecorativeLayer } from './DecorativeLayer';
 
 export function Footer() {
   return (
     <footer className="footer">
+      <DecorativeLayer variant="footer" />
       <div className="container footer__grid">
         <div className="footer__brand">
           <span className="brand__name">{site.brand}</span>

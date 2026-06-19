@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="680" height="1400" viewBox="0 0 680 1400" fill="none">
+<defs>
+  <linearGradient id="paper" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0%" stop-color="#F9F5ED"/>
+    <stop offset="100%" stop-color="#F5EFE4"/>
+  </linearGradient>
+  <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+    <feDropShadow dx="0" dy="7" stdDeviation="12" flood-color="#C9AD75" flood-opacity="0.12"/>
+  </filter>
+</defs>
+<g filter="url(#shadow)">
+  <path d="M220 78 H 460 C 500 78 530 108 530 147 V 1253 C 530 1292 500 1322 460 1322 H 220 C 180 1322 150 1292 150 1253 V 147 C 150 108 180 78 220 78 Z" fill="url(#paper)" stroke="#D8B06A" stroke-width="4"/>
+  <path d="M236 97 H 444 C 473 97 495 119 495 148 V 1247 C 495 1276 473 1298 444 1298 H 236 C 207 1298 185 1276 185 1247 V 148 C 185 119 207 97 236 97 Z" stroke="#D8B06A" stroke-width="2.2" opacity="0.95"/>
+  <path d="M244 109 H 436 C 459 109 476 126 476 149 V 1241 C 476 1264 459 1281 436 1281 H 244 C 221 1281 204 1264 204 1241 V 149 C 204 126 221 109 244 109 Z" stroke="#E7CFA2" stroke-width="1.3" opacity="0.95"/>
+  <path d="M210 105 C 210 74, 240 60, 273 60" stroke="#D8B06A" stroke-width="4"/>
+  <path d="M470 105 C 470 74, 440 60, 407 60" stroke="#D8B06A" stroke-width="4"/>
+  <path d="M210 1295 C 210 1326, 240 1340, 273 1340" stroke="#D8B06A" stroke-width="4"/>
+  <path d="M470 1295 C 470 1326, 440 1340, 407 1340" stroke="#D8B06A" stroke-width="4"/>
+</g>
+<g transform="translate(340 1180)" stroke="#D8B06A" stroke-linecap="round" stroke-linejoin="round" opacity="0.92">
+  <path d="M0 52 C -7 28, -34 8, -60 -2 C -50 28, -34 45, -10 59" stroke-width="2.3"/>
+  <path d="M0 52 C 7 28, 34 8, 60 -2 C 50 28, 34 45, 10 59" stroke-width="2.3"/>
+  <path d="M0 50 C -14 26, -14 4, 0 -18 C 14 4, 14 26, 0 50 Z" stroke-width="2.5"/>
+  <path d="M-78 47 C -54 35, -28 34, -8 42" stroke-width="1.8" opacity="0.7"/>
+  <path d="M78 47 C 54 35, 28 34, 8 42" stroke-width="1.8" opacity="0.7"/>
+  <circle cx="-72" cy="-26" r="3" fill="#D8B06A" stroke="none" opacity="0.8"/>
+  <circle cx="0" cy="-40" r="3" fill="#D8B06A" stroke="none" opacity="0.8"/>
+  <circle cx="72" cy="-26" r="3" fill="#D8B06A" stroke="none" opacity="0.8"/>
+</g>
+</svg>
