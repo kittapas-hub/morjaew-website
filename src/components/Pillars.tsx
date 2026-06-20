@@ -1,47 +1,44 @@
-import { BrandIcon, type BrandIconName } from './BrandIcon';
 import { DecorativeLayer } from './DecorativeLayer';
 
-const pillars: Array<{ icon: BrandIconName; title: string; desc: string }> = [
+const pillars = [
   {
-    icon: 'work',
-    title: 'ปรึกษางานและธุรกิจ',
-    desc: 'เหมาะกับคนที่กำลังเริ่ม ขยาย เปลี่ยนงาน คุยหุ้นส่วน หรือเลือกจังหวะลงทุน',
+    num: '01',
+    title: 'ให้คำปรึกษาแบบส่วนตัว',
+    desc: 'คุยเรื่องสำคัญผ่านช่องทางส่วนตัว ทีมงานช่วยดูแลขั้นตอนและคิวปรึกษาให้ชัดเจน',
   },
   {
-    icon: 'heart',
-    title: 'ปรึกษาความสัมพันธ์',
-    desc: 'เหมาะกับคนที่อยากเข้าใจภาพรวมความรัก ครอบครัว คู่ครอง หรือการสื่อสารกับคนสำคัญ',
+    num: '02',
+    title: 'เน้นแนวทางที่ใช้ได้จริง',
+    desc: 'ช่วยมองภาพรวม จุดที่ควรระวัง และทางเลือกที่นำไปประกอบการตัดสินใจได้',
   },
   {
-    icon: 'home',
-    title: 'ปรึกษาบ้านและฮวงจุ้ย',
-    desc: 'เหมาะกับคนที่กำลังซื้อ ย้าย ปรับบ้าน ดูที่ดิน หรืออยากเช็กทิศทางก่อนตัดสินใจ',
+    num: '03',
+    title: 'เหมาะกับเรื่องสำคัญ',
+    desc: 'งาน เงิน ธุรกิจ หุ้นส่วน ความสัมพันธ์ บ้าน ที่ดิน และจังหวะชีวิตที่ต้องคิดรอบด้าน',
   },
   {
-    icon: 'compass',
-    title: 'ปรึกษาจังหวะชีวิต',
-    desc: 'เหมาะกับคนที่รู้สึกติดขัด ลังเล หรืออยากเห็นแนวทางที่เหมาะกับช่วงชีวิตตอนนี้',
+    num: '04',
+    title: 'รักษาความเป็นส่วนตัว',
+    desc: 'ข้อมูล รูปถ่าย และเรื่องที่ปรึกษาใช้เพื่อการนัดหมายและการให้คำปรึกษาเท่านั้น',
   },
 ];
 
 export function Pillars() {
   return (
-    <section className="section section--alt section--services" id="pillars">
+    <section className="section section--benefits" id="pillars">
       <DecorativeLayer variant="services" />
       <div className="container">
-        <div className="section__head">
-          <p className="section__eyebrow">บริการที่ผูกกับเรื่องของคุณ</p>
-          <h2 className="section__title">เลือกรูปแบบปรึกษาที่เหมาะกับสถานการณ์</h2>
+        <div className="section__head section__head--center">
+          <p className="section__eyebrow">ทำไมต้องหมอแจว</p>
+          <h2 className="section__title">ปรึกษาด้วยหลักการ ไม่ใช่แค่คำทำนาย</h2>
           <p className="section__lead">
-            บริการถูกออกแบบให้คุยสั้น กระชับ และตรงประเด็น ทีมงานจะช่วยแนะนำแพ็กเกจที่เหมาะสมใน LINE
+            จุดสำคัญคือการช่วยให้คุณเห็นทางเลือกชัดขึ้น โดยยังตัดสินใจบนบริบทจริงของตัวเอง
           </p>
         </div>
         <div className="pillar-grid">
           {pillars.map((p) => (
             <div className="pillar" key={p.title}>
-              <div className="pillar__icon icon-badge" aria-hidden="true">
-                <BrandIcon name={p.icon} />
-              </div>
+              <div className="pillar__num" aria-hidden="true">{p.num}</div>
               <h3>{p.title}</h3>
               <p>{p.desc}</p>
             </div>

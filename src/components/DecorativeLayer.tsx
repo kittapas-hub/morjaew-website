@@ -22,13 +22,13 @@ const decorByVariant: Record<DecorVariant, string[]> = {
 };
 
 const assetByName: Record<string, string> = {
-  blossom: '/morjaew-cherry-blossom-corner.svg',
-  'blossom-png': '/decorations/morjaew-cherry-blossom-corner-transparent.png',
-  cloud: '/morjaew-cloud-leaf.svg',
-  'cloud-png': '/cloud_transparent.png',
-  divider: '/morjaew-lotus-divider.svg',
-  frame: '/morjaew-mandala-ring.svg',
-  mountain: '/morjaew-mountain-landscape.svg',
+  blossom: '/assets/blossom.png',
+  'blossom-png': '/assets/blossom.png',
+  cloud: '/assets/cloud.png',
+  'cloud-png': '/assets/cloud.png',
+  divider: '/assets/divider.png',
+  frame: '/assets/mandala.png',
+  mountain: '/assets/mountain.png',
 };
 
 type Props = {

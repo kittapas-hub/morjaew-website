@@ -17,11 +17,11 @@ const items: Array<{
 
 export function QuickMenu() {
   return (
-    <section className="section section--alt section--consult" id="consult">
+    <section className="section section--services-list" id="services">
       <DecorativeLayer variant="consult" />
       <div className="container">
-        <div className="section__head">
-          <p className="section__eyebrow">เลือกหัวข้อที่อยากปรึกษา</p>
+        <div className="section__head section__head--center">
+          <p className="section__eyebrow">หัวข้อที่ปรึกษาได้</p>
           <h2 className="section__title">อยากดูเรื่องไหน เลือกได้เลย</h2>
           <p className="section__lead">
             แต่ละเรื่องจะคุยแบบส่วนตัว ทีมงานช่วยแนะนำรูปแบบบริการและคิวว่างผ่าน LINE {site.lineOaId}
@@ -29,19 +29,18 @@ export function QuickMenu() {
         </div>
         <div className="quick-grid">
           {items.map((it) => (
-            <div
+            <article
               key={it.title}
               className="quick-card"
             >
-              <span className="quick-card__icon icon-badge" aria-hidden="true">
-                <BrandIcon name={it.icon} />
-              </span>
-              <span>
-                <span className="quick-card__title">{it.title}</span>
-                <br />
-                <span className="quick-card__desc">{it.desc}</span>
-              </span>
-            </div>
+              <div className="quick-card__head">
+                <span className="quick-card__icon icon-badge" aria-hidden="true">
+                  <BrandIcon name={it.icon} />
+                </span>
+                <h3 className="quick-card__title">{it.title}</h3>
+              </div>
+              <p className="quick-card__desc">{it.desc}</p>
+            </article>
           ))}
         </div>
       </div>

@@ -19,23 +19,24 @@ type Props = {
 const paths: Record<BrandIconName, ReactNode> = {
   calendar: (
     <>
-      <path d="M7 3v3" />
-      <path d="M17 3v3" />
-      <path d="M4.5 8.5h15" />
-      <rect x="4.5" y="5.5" width="15" height="14" rx="2.5" />
-      <path d="M8 12h2.5" />
-      <path d="M13.5 12H16" />
-      <path d="M8 15.5h2.5" />
+      <rect x="4.5" y="5.5" width="15" height="14" rx="3" />
+      <path d="M8 3.8v3.4" />
+      <path d="M16 3.8v3.4" />
+      <path d="M4.5 9.4h15" />
+      <path d="M8.2 13h2.1" />
+      <path d="M13.7 13h2.1" />
+      <path d="M8.2 16.1h2.1" />
+      <path d="M13.7 16.1h2.1" />
     </>
   ),
   checklist: (
     <>
-      <path d="M9 6.5h10" />
-      <path d="M9 12h10" />
-      <path d="M9 17.5h10" />
-      <path d="m4.5 6.5 1 1 2-2" />
-      <path d="m4.5 12 1 1 2-2" />
-      <path d="m4.5 17.5 1 1 2-2" />
+      <path d="M9.5 6.6h9" />
+      <path d="M9.5 12h9" />
+      <path d="M9.5 17.4h9" />
+      <path d="M5 6.6h.01" />
+      <path d="M5 12h.01" />
+      <path d="M5 17.4h.01" />
     </>
   ),
   compass: (
@@ -63,13 +64,17 @@ const paths: Record<BrandIconName, ReactNode> = {
   ),
   message: (
     <>
-      <path d="M5 6.5h14v9.5H9l-4 3v-12.5Z" />
+      <path d="M5 6.4h14v9.4H9.4L5 19.1V6.4Z" />
       <path d="M8.5 10h7" />
-      <path d="M8.5 13h4.5" />
+      <path d="M8.5 13h4.8" />
     </>
   ),
   phone: (
-    <path d="M7.5 4.5 10 8l-1.6 1.5c.8 1.8 2.3 3.3 4.1 4.1L14 12l3.5 2.5-1 3.3c-.2.7-.9 1.1-1.6 1A12.1 12.1 0 0 1 5.2 9.1c-.1-.7.3-1.4 1-1.6l1.3-3Z" />
+    <>
+      <path d="M14 5.2c2.4.5 4.2 2.3 4.7 4.8" />
+      <path d="M14 8.5c.7.2 1.2.7 1.4 1.4" />
+      <path d="M7.2 4.8 10 8.1 8.7 9.8c.8 1.7 2.1 3 3.8 3.8l1.7-1.3 3.3 2.8-.9 3.1c-.2.7-.9 1.2-1.7 1.1A12.4 12.4 0 0 1 4.7 9.1c-.1-.8.4-1.5 1.1-1.7l1.4-.4Z" />
+    </>
   ),
   question: (
     <>
@@ -87,10 +92,10 @@ const paths: Record<BrandIconName, ReactNode> = {
   ),
   work: (
     <>
-      <path d="M9 7V5.8c0-.7.6-1.3 1.3-1.3h3.4c.7 0 1.3.6 1.3 1.3V7" />
-      <rect x="4.5" y="7" width="15" height="11.5" rx="2.2" />
-      <path d="M4.5 11.5h15" />
-      <path d="M10 11.5v1h4v-1" />
+      <path d="M9 7V5.8c0-.8.6-1.4 1.4-1.4h3.2c.8 0 1.4.6 1.4 1.4V7" />
+      <rect x="4.5" y="7" width="15" height="11.5" rx="2.5" />
+      <path d="M4.5 11.3h15" />
+      <path d="M10.2 11.3v1.2h3.6v-1.2" />
     </>
   ),
 };
@@ -102,7 +107,7 @@ export function BrandIcon({ name, className = '' }: Props) {
       viewBox="0 0 24 24"
       fill="none"
       stroke="currentColor"
-      strokeWidth="1.7"
+      strokeWidth="1.85"
       strokeLinecap="round"
       strokeLinejoin="round"
       aria-hidden="true"

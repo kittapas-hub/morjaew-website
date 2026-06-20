@@ -16,9 +16,9 @@ export function Footer() {
         <div>
           <h4>บริการ</h4>
           <nav className="footer__links">
-            <a href="#pillars">งาน / ธุรกิจ</a>
-            <a href="#pillars">ความสัมพันธ์</a>
-            <a href="#pillars">บ้าน / ที่ดิน</a>
+            <a href="#services">งาน / ธุรกิจ</a>
+            <a href="#services">ความสัมพันธ์</a>
+            <a href="#services">บ้าน / ที่ดิน</a>
             <a href="#pricing">ราคา</a>
           </nav>
         </div>
@@ -30,7 +30,7 @@ export function Footer() {
               นัดปรึกษาผ่าน LINE
             </a>
             <a href="#faq">คำถามที่พบบ่อย</a>
-            <a href="/booking">ระบบจองคิว (เร็ว ๆ นี้)</a>
+            <a href="#options">ช่องทางการปรึกษา</a>
           </nav>
         </div>
       </div>

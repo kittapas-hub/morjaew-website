@@ -2,12 +2,10 @@ import { site } from '../config/site';
 import { LineButton } from './LineButton';
 
 const navLinks = [
-  { href: '#consult', label: 'เรื่องที่ปรึกษาได้' },
-  { href: '#about', label: 'ความน่าเชื่อถือ' },
-  { href: '#reviews', label: 'รีวิว' },
-  { href: '#pillars', label: 'บริการ' },
-  { href: '#booking-cta', label: 'จองคิว' },
-  { href: '#faq', label: 'คำถามที่พบบ่อย' },
+  { href: '#services', label: 'บริการ' },
+  { href: '#about', label: 'เกี่ยวกับหมอแจว' },
+  { href: '#proof', label: 'ผลงานจริง' },
+  { href: '#pricing', label: 'ค่าปรึกษา' },
 ];
 
 export function Header() {
@@ -15,10 +13,10 @@ export function Header() {
     <header className="header">
       <div className="container header__inner">
         <a className="brand" href="#top">
-          <img className="brand__logo" src="/logo-mohjaew.jpg" alt="หมอแจว" />
+          <img className="brand__logo" src="/assets/dragon-seal.png" alt="ตราหมอแจว" />
           <span>
-            <span className="brand__name">{site.brand}</span>{' '}
-            <span className="brand__sub">{site.subtitle}</span>
+            <span className="brand__name">{site.brand} · พ่อปู่โหรา</span>
+            <span className="brand__sub">ที่ปรึกษาชีวิตและธุรกิจ</span>
           </span>
         </a>
 
@@ -30,7 +28,7 @@ export function Header() {
           ))}
         </nav>
 
-        <LineButton className="header__cta">จองคิวผ่าน LINE</LineButton>
+        <LineButton className="header__cta">ทักผ่าน LINE</LineButton>
       </div>
     </header>
   );

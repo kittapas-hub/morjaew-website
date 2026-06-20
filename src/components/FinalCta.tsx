@@ -10,7 +10,7 @@ export function FinalCta() {
         <div className="final-cta__card">
           <img className="final-cta__label" src="/morjaew-vertical-label.svg" alt="" aria-hidden="true" />
           <div className="final-cta__copy">
-            <p className="section__eyebrow" style={{ color: 'var(--gold-soft)' }}>
+            <p className="section__eyebrow">
               นัดปรึกษาส่วนตัว
             </p>
             <h2 className="section__title">ทัก LINE เพื่อเริ่มต้นพูดคุย</h2>
@@ -26,7 +26,7 @@ export function FinalCta() {
 
           <div className="qr-box">
             <div className="qr-box__qr">
-              <img src="/line-qr.png" alt={`QR code สำหรับเพิ่ม LINE ${site.lineOaId}`} width={180} height={180} />
+              <img src="/assets/line-qr.png" alt={`QR code สำหรับเพิ่ม LINE ${site.lineOaId}`} width={180} height={180} />
             </div>
             <div className="qr-box__copy">
               <span className="qr-box__label">สแกนเพื่อเพิ่ม LINE</span>

@@ -16,23 +16,23 @@ export function About() {
         <div className="portrait-wrap">
           <img
             className="dragon-watermark about__dragon-watermark"
-            src="/decorations/dragon-watermark.png"
+            src="/assets/dragon-watermark.png"
             alt=""
             aria-hidden="true"
             loading="lazy"
           />
-          <img className="about__mandala" src="/morjaew-mandala-ring.svg" alt="" aria-hidden="true" />
+          <img className="about__mandala" src="/assets/mandala.png" alt="" aria-hidden="true" />
           <img
             className="about__portrait"
-            src="/morjaew-portrait.png"
+            src="/assets/about-portrait.png"
             alt="หมอแจว พ่อปู่โหรา ญาณหยั่งรู้"
             loading="lazy"
           />
         </div>
         <div className="about__content">
-          <p className="section__eyebrow">ความน่าเชื่อถือ</p>
+          <p className="section__eyebrow">เกี่ยวกับหมอแจว</p>
           <h2 className="section__title">
-            หมอแจวคือใคร และเหมาะกับใคร
+            ที่ปรึกษาที่อยู่เคียงข้างในทุกการตัดสินใจสำคัญ
           </h2>
           <p>
             {site.brand} {site.subtitle} คือ {site.positioning} มีประสบการณ์ให้คำปรึกษามากกว่า{' '}
