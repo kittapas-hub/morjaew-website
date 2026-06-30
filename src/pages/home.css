@@ -1,5 +1,31 @@
 /* Home page responsive overrides (desktop defaults stay inline in Home.tsx) */
 
+:root {
+  --home-header-h: 76px;
+}
+
+.home-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 50;
+  background: rgba(251, 247, 239, 0.92);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid #ece3cf;
+  transition: box-shadow 0.2s ease, background 0.2s ease;
+}
+
+.home-header--scrolled {
+  background: rgba(251, 247, 239, 0.98);
+  box-shadow: 0 8px 24px rgba(60, 45, 20, 0.08);
+}
+
+.home-header-spacer {
+  height: var(--home-header-h);
+  flex-shrink: 0;
+}
+
 .home-divider img {
   max-width: min(340px, 100%);
   height: auto;
@@ -104,10 +130,6 @@
     margin-top: 8px;
     border-bottom: none;
     justify-content: center !important;
-  }
-
-  .home-header {
-    position: sticky !important;
   }
 
   .home-header__wrap {

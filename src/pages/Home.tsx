@@ -89,6 +89,44 @@ const marquee = [
 const eyebrow: CSSProperties = { fontSize: '14px', letterSpacing: '4px', color: '#B0863C', fontWeight: 600, marginBottom: '14px' };
 const navLink: CSSProperties = { fontSize: '15px', color: '#4A463C', textDecoration: 'none', fontWeight: 500 };
 
+function useScrollLock(locked: boolean) {
+  useEffect(() => {
+    if (!locked) return;
+
+    const scrollY = window.scrollY;
+    const { style } = document.body;
+    style.overflow = 'hidden';
+    style.position = 'fixed';
+    style.top = `-${scrollY}px`;
+    style.left = '0';
+    style.right = '0';
+    style.width = '100%';
+
+    return () => {
+      style.overflow = '';
+      style.position = '';
+      style.top = '';
+      style.left = '';
+      style.right = '';
+      style.width = '';
+      window.scrollTo(0, scrollY);
+    };
+  }, [locked]);
+}
+
+function useHeaderScroll() {
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 12);
+    onScroll();
+    window.addEventListener('scroll', onScroll, { passive: true });
+    return () => window.removeEventListener('scroll', onScroll);
+  }, []);
+
+  return scrolled;
+}
+
 function useAnchorScroll(onNavigate?: () => void) {
   useEffect(() => {
     const scrollTo = (hash: string) => {
@@ -145,9 +183,11 @@ export function Home() {
   const [openFaq, setOpenFaq] = useState(0);
   const [menuOpen, setMenuOpen] = useState(false);
   const closeMenu = useCallback(() => setMenuOpen(false), []);
+  const headerScrolled = useHeaderScroll();
+  useScrollLock(menuOpen);
   useAnchorScroll(closeMenu);
   return (
-    <div className="home" style={{ fontFamily: "'Noto Sans Thai', sans-serif", backgroundColor: '#FBF7EF', backgroundImage: 'radial-gradient(rgba(176,134,60,0.10) 1px, transparent 1.6px)', backgroundSize: '24px 24px', color: '#29271F', overflowX: 'hidden', lineHeight: 1.7 }}>      <style>{`
+    <div className="home" style={{ fontFamily: "'Noto Sans Thai', sans-serif", backgroundColor: '#FBF7EF', backgroundImage: 'radial-gradient(rgba(176,134,60,0.10) 1px, transparent 1.6px)', backgroundSize: '24px 24px', color: '#29271F', overflowX: 'clip', lineHeight: 1.7 }}>      <style>{`
         .svc-card{position:relative;display:flex;flex-direction:column;text-decoration:none;transition:box-shadow .25s,transform .25s,border-color .25s}
         .svc-card:hover{box-shadow:0 16px 38px rgba(120,95,40,.14);transform:translateY(-4px);border-color:#E0C994}
         .svc-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,#D8BE82,#B0863C);transform:scaleX(0);transform-origin:left;transition:transform .25s}
@@ -160,7 +200,7 @@ export function Home() {
       `}</style>
 
       {/* ============ HEADER ============ */}
-      <header className="home-header" style={{ position: 'sticky', top: 0, zIndex: 50, background: 'rgba(251,247,239,0.92)', backdropFilter: 'blur(10px)', borderBottom: '1px solid #ECE3CF' }}>
+      <header className={`home-header${headerScrolled ? ' home-header--scrolled' : ''}`}>
         <div className="home-header__wrap">
           <div className="home-header__inner" style={{ maxWidth: '1200px', margin: '0 auto', padding: '14px 40px', display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
             <div style={{ display: 'flex', alignItems: 'center', gap: '13px' }}>
@@ -192,6 +232,7 @@ export function Home() {
           </div>
         </div>
       </header>
+      <div className="home-header-spacer" aria-hidden="true" />
       {/* ============ 1 · HERO ============ */}
       <section style={{ position: 'relative', overflow: 'hidden', background: 'radial-gradient(120% 120% at 80% 0%, #F6EEDC 0%, #FBF7EF 55%)' }}>
         <img src="/assets/mountain.png" alt="" style={{ position: 'absolute', left: 0, right: 0, bottom: 0, width: '100%', opacity: 0.5, pointerEvents: 'none', zIndex: 0 }} />
