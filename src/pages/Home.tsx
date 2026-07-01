@@ -243,15 +243,15 @@ export function Home() {
               <span style={{ fontSize: '13.5px', color: '#6E6550', fontWeight: 600, letterSpacing: '.4px' }}>คำปรึกษาดวงส่วนตัว โดยหมอแจว พ่อปู่โหรา</span>
             </div>
             <h1 className="home-hero-title" style={{ fontFamily: "'Noto Serif Thai', serif", fontWeight: 700, fontSize: '56px', lineHeight: 1.22, color: '#15233A', margin: '0 0 22px', letterSpacing: '-.3px' }}>
-              กำลังวนอยู่กับเรื่องเดิม<br />
-              ที่คิดเท่าไรก็ยังไม่ลงตัว?<br />
-              <span style={{ color: '#B0863C' }}>อย่าเสียเวลา<br />กับทางที่ไม่ใช่</span>
+              เรื่องที่คุณยังมองไม่เห็น<br />
+              หมอแจวอาจเห็นก่อน<br />
+              <span style={{ color: '#B0863C' }}>ดูจากดวงและโหงวเฮ้ง<br />เพื่ออ่านจังหวะชีวิตให้ชัด</span>
             </h1>
             <p className="home-hero-lead" style={{ fontSize: '19px', color: '#5F5949', maxWidth: '500px', margin: '0 0 36px' }}>
-              คนรักคนนี้ควรไปต่อไหม งานที่ทำอยู่ยังใช่หรือเปล่า<br />
-              เงินก้อนนี้ควรเสี่ยงหรือควรรอ<br />
-              หมอแจวจะดูจากดวงและโหงวเฮ้ง เพื่อชี้ให้เห็นจังหวะที่ควรเดินหน้า<br />
-              สิ่งที่ต้องระวัง และเรื่องที่ไม่ควรรีบตัดสินใจ
+              เรื่องรัก งาน เงิน ธุรกิจ หรือการตัดสินใจครั้งสำคัญ<br />
+              หมอแจวจะดูจากพื้นดวงและโหงวเฮ้ง เพื่อชี้ให้เห็น<br />
+              จังหวะที่ควรเดินหน้า เรื่องที่ควรรอ<br />
+              และสิ่งที่ไม่ควรมองข้าม
             </p>
             <div className="home-hero-actions" style={{ display: 'flex', alignItems: 'center', gap: '16px', flexWrap: 'wrap' }}>
               <a href={BOOKING} style={{ display: 'inline-flex', alignItems: 'center', gap: '11px', background: '#06C755', color: '#fff', textDecoration: 'none', fontWeight: 700, fontSize: '19px', padding: '17px 34px', borderRadius: '999px', boxShadow: '0 12px 26px rgba(6,199,85,.32)' }}>
