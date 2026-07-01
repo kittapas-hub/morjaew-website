@@ -36,10 +36,10 @@ const services = [
 ];
 
 const aboutPoints = [
-  'เริ่มจากประเด็นที่คุณกำลังเผชิญ',
-  'ศาสตร์จีนและโหงวเฮ้งเป็นอีกมุมมอง',
-  'ช่วยให้เห็นปัจจัยและทางเลือกชัดขึ้น',
-  'ปรึกษาส่วนตัวตามเวลานัดหมาย',
+  'อ่านจากพื้นดวงและเรื่องที่คุณกำลังเผชิญ',
+  'ใช้ศาสตร์จีนและโหงวเฮ้งประกอบการพิจารณา',
+  'มองจังหวะที่ควรเดินหน้า รอ หรือระวัง',
+  'ดูดวงส่วนตัวตามเวลานัดหมาย',
 ];
 
 const whyUs = [
@@ -303,9 +303,11 @@ export function Home() {
             <img src="/assets/about-portrait.png" alt="หมอแจว" style={{ position: 'relative', width: '100%', borderRadius: '18px', display: 'block', boxShadow: '0 24px 50px rgba(60,45,20,.20)' }} />
           </div>
           <div>
-            <div className="home-eyebrow" style={eyebrow}>เมื่อเรื่องสำคัญ ไม่ควรฝากไว้กับคำตอบทั่วไป</div>
+            <p className="home-about-cred" style={{ fontSize: 'clamp(14px, 3.8vw, 16px)', letterSpacing: 0, color: '#B0863C', fontWeight: 600, lineHeight: 1.5, margin: '0 0 8px' }}>ประสบการณ์กว่า 30 ปี ในศาสตร์จีนและโหงวเฮ้ง</p>
+            <div className="home-about-eyebrow" style={{ fontSize: '14px', letterSpacing: 0, wordSpacing: 0, lineHeight: 1.35, color: '#B0863C', fontWeight: 600, marginBottom: '14px' }}>เมื่อเรื่องสำคัญ ไม่ควรฝากไว้กับคำตอบทั่วไป</div>
             <Diamond />
-            <h2 className="home-section-title" style={{ fontFamily: "'Noto Serif Thai', serif", fontWeight: 700, fontSize: '40px', lineHeight: 1.3, color: '#15233A', margin: '0 0 22px' }}>คำปรึกษาที่เริ่มจากเรื่องของคุณ<br />ไม่ใช่คำทำนายสำเร็จรูป</h2>            <p style={{ fontSize: '18px', color: '#514C3E', margin: '0 0 30px' }}>หมอแจวให้คำปรึกษาด้วยศาสตร์จีนและโหงวเฮ้งมาอย่างต่อเนื่อง โดยให้ความสำคัญกับสิ่งที่คุณกำลังเผชิญจริง เพื่อช่วยมองภาพรวม จังหวะ และปัจจัยที่อาจถูกมองข้าม ก่อนคุณตัดสินใจในเรื่องที่มีความหมายกับชีวิตของตัวเอง</p>
+            <h2 className="home-section-title" style={{ fontFamily: "'Noto Serif Thai', serif", fontWeight: 700, fontSize: '40px', lineHeight: 1.3, color: '#15233A', margin: '0 0 22px' }}>การดูดวงที่เริ่มจากเรื่องของคุณ<br />ไม่ใช่คำทำนายสำเร็จรูป</h2>
+            <p style={{ fontSize: '18px', color: '#514C3E', margin: '0 0 30px' }}>หมอแจวใช้ศาสตร์จีนและโหงวเฮ้งประกอบการอ่านพื้นดวง<br />เพื่อมองจังหวะและปัจจัยของเรื่องที่คุณกำลังเผชิญ<br />ไม่ว่าจะเป็นความรัก งาน เงิน ธุรกิจ หรือการตัดสินใจสำคัญ</p>
             <div className="home-about-points" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '14px' }}>              {aboutPoints.map((p) => (
                 <div key={p} style={{ display: 'flex', alignItems: 'flex-start', gap: '12px', background: 'rgba(255,255,255,.6)', border: '1px solid #E7DcC2', borderRadius: '12px', padding: '15px 17px' }}>
                   <span style={{ flex: 'none', width: '24px', height: '24px', borderRadius: '50%', background: '#4F6E58', color: '#fff', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '13px', marginTop: '2px' }}>✓</span>
