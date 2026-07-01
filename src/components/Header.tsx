@@ -2,9 +2,9 @@ import { site } from '../config/site';
 import { LineButton } from './LineButton';
 
 const navLinks = [
-  { href: '#services', label: 'บริการ' },
-  { href: '#about', label: 'เกี่ยวกับหมอแจว' },
-  { href: '#proof', label: 'ผลงานจริง' },
+  { href: '#services', label: 'เรื่องที่ปรึกษา' },
+  { href: '#about', label: 'หมอแจว' },
+  { href: '#proof', label: 'กิจกรรม' },
   { href: '#pricing', label: 'ค่าปรึกษา' },
 ];
 
@@ -28,7 +28,7 @@ export function Header() {
           ))}
         </nav>
 
-        <LineButton className="header__cta">ทักผ่าน LINE</LineButton>
+        <LineButton className="header__cta">เช็กคิวปรึกษา</LineButton>
       </div>
     </header>
   );

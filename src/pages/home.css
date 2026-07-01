@@ -31,6 +31,10 @@
   height: auto;
 }
 
+.home-services-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
 /* ---- Header / mobile nav ---- */
 .home-nav-toggle {
   display: none;
@@ -336,6 +340,7 @@
 
   .home-grid-3,
   .home-grid-4,
+  .home-services-grid,
   .home-about-points,
   .home-gallery-side {
     grid-template-columns: 1fr !important;
@@ -451,5 +456,137 @@
   .home-eyebrow {
     letter-spacing: 3px !important;
     font-size: 13px !important;
+  }
+}
+
+/* Consultation flow — section 7 only */
+.home-consult-steps {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0;
+  max-width: 960px;
+  margin: 0 auto;
+  border: 1px solid #eae0cb;
+  border-radius: 18px;
+  overflow: hidden;
+  background: #fff;
+}
+
+.home-consult-step {
+  padding: 36px 28px;
+  text-align: center;
+}
+
+.home-consult-step:not(:last-child) {
+  border-right: 1px solid #efe7d4;
+}
+
+.home-consult-step__num {
+  font-family: 'Noto Serif Thai', serif;
+  font-size: 34px;
+  font-weight: 700;
+  color: #d8be82;
+  margin-bottom: 14px;
+  line-height: 1;
+}
+
+.home-consult-step__title {
+  font-family: 'Noto Serif Thai', serif;
+  font-weight: 600;
+  font-size: 20px;
+  color: #15233a;
+  margin: 0 0 10px;
+  line-height: 1.35;
+}
+
+.home-consult-step__desc {
+  font-size: 15px;
+  color: #6b6450;
+  margin: 0;
+  line-height: 1.65;
+}
+
+.home-consult-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: #b0863c;
+  font-weight: 600;
+  font-size: 15px;
+  text-decoration: none;
+  transition: gap 0.2s ease;
+}
+
+.home-consult-cta:hover {
+  gap: 12px;
+}
+
+@media (max-width: 768px) {
+  .home-consult-steps {
+    grid-template-columns: 1fr;
+    max-width: 560px;
+  }
+
+  .home-consult-step:not(:last-child) {
+    border-right: none;
+    border-bottom: 1px solid #efe7d4;
+  }
+
+  .home-consult-step {
+    padding: 28px 24px;
+  }
+}
+
+/* Mobile floating CTA — home page only, ≤768px */
+@media (max-width: 768px) {
+  .home {
+    padding-bottom: calc(72px + env(safe-area-inset-bottom, 0px));
+  }
+
+  .home-mobile-floating-cta {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 45;
+    padding: 10px 16px calc(10px + env(safe-area-inset-bottom, 0px));
+    border-top: 1px solid #e8dcc0;
+    background: rgba(251, 247, 239, 0.96);
+    backdrop-filter: blur(8px);
+    transition: opacity 0.22s ease, transform 0.22s ease;
+  }
+
+  .home-mobile-floating-cta--hidden {
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(100%);
+  }
+
+  .home-mobile-floating-cta__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 48px;
+    padding: 12px 20px;
+    border: 1px solid #d8be82;
+    border-radius: 999px;
+    background: #15233a;
+    box-shadow: 0 10px 24px rgba(21, 35, 58, 0.22);
+    color: #fbf7ef;
+    font-family: 'Noto Sans Thai', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0.2px;
+    text-decoration: none;
+  }
+
+  .home-mobile-floating-cta__btn:active {
+    background: #1a2d49;
+  }
+}
+
+@media (min-width: 769px) {
+  .home-mobile-floating-cta {
+    display: none;
   }
 }

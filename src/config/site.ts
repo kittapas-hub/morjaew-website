@@ -1,6 +1,6 @@
-// Single source of truth for brand + LINE contact.
-// Every CTA in the site reads from here — do not hardcode the LINE URL elsewhere.
-// Override via .env (VITE_LINE_*) for staging/prod without touching code.
+// Single source of truth for brand + LINE contact + booking.
+// Every CTA in the site reads from here — do not hardcode URLs elsewhere.
+// Override via .env (VITE_LINE_*, VITE_BOOKING_URL) for staging/prod without touching code.
 
 export const site = {
   brand: 'หมอแจว',
@@ -12,6 +12,8 @@ export const site = {
 
   lineOaId: import.meta.env.VITE_LINE_OA_ID ?? '@mohjaew',
   lineUrl: import.meta.env.VITE_LINE_URL ?? 'https://line.me/R/ti/p/@mohjaew',
+  bookingUrl:
+    import.meta.env.VITE_BOOKING_URL ?? 'https://backoffice.mohjaew.com/booking',
 } as const;
 
 // Required compliance disclaimer — reused in the footer and trust section.
