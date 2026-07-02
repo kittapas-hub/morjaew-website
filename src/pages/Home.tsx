@@ -36,30 +36,29 @@ const services = [
 ];
 
 const aboutPoints = [
-  'อ่านพื้นดวงควบคู่กับเรื่องที่คุณกำลังเผชิญ',
-  'ใช้ศาสตร์จีนและโหงวเฮ้งประกอบการเปิดดวง',
-  'มองจังหวะที่ควรเดินหน้า รอ หรือระวัง',
-  'ดูดวงส่วนตัวตามเวลานัดหมาย',
+  'ดูพื้นดวงและโหงวเฮ้งประกอบกัน',
+  'เปิดได้ทุกเรื่องภายในคิวเดียว',
+  'ดูดวงสดทางโทรศัพท์ ถามได้ระหว่างการคุย',
+  'ชี้เรื่องที่ควรเดินหน้า รอ หรือระวัง',
 ];
 
 const whyUs = [
-  { num: '01', title: 'เรื่องที่คุณกำลังเจอ มีความหมายอย่างไร', desc: 'มองภาพรวมของปัญหา ว่าอะไรคือจุดสำคัญที่คุณกำลังเผชิญ' },
-  { num: '02', title: 'คนที่เกี่ยวข้อง ควรไว้ใจแค่ไหน', desc: 'ใช้โหงวเฮ้งและข้อมูลที่มี เพื่ออ่านลักษณะ นิสัย และจังหวะความสัมพันธ์' },
-  { num: '03', title: 'ควรเดินหน้า รอ หรือถอยมาตั้งหลัก', desc: 'มองเห็นจังหวะที่ควรเร่ง จังหวะที่ควรรอ และสิ่งที่ควรระวัง' },
-  { num: '04', title: 'สิ่งที่คุณยังไม่ทันมองเห็น', desc: 'เปิดอีกมุมหนึ่งของเรื่องเดิม เพื่อให้ตัดสินใจโดยไม่ใช้อารมณ์เพียงอย่างเดียว' },
+  { num: '01', title: 'อ่านพื้นดวงและโหงวเฮ้ง', desc: '' },
+  { num: '02', title: 'เปิดได้ทุกเรื่องภายในคิวเดียว', desc: '' },
+  { num: '03', title: 'ถามได้ระหว่างการดูดวงทางโทรศัพท์', desc: '' },
+  { num: '04', title: 'รู้เรื่องที่ควรเดินหน้า รอ หรือระวัง', desc: '' },
 ];
 
 const pricingCardIncludes = [
-  'ปรึกษาส่วนตัวทางโทรศัพท์ตามเวลานัดหมาย',
-  'นำหลายเรื่องมาพูดคุยได้ภายในคิวเดียว',
-  'ส่งรูปหน้าตรงเพื่อประกอบการพิจารณา',
-  'ทีมงานยืนยันคิวหลังชำระเงินเรียบร้อย',
+  'เปิดได้ทุกเรื่องภายในคิวเดียว',
+  'ถามได้ระหว่างการดูดวงทางโทรศัพท์',
+  'ยืนยันคิวหลังชำระเงิน',
 ];
 
 const consultSteps = [
-  { num: 'ขั้นตอนที่ 1', title: 'ส่งเรื่องที่ต้องการเปิดดวง', desc: 'บอกเรื่องที่กำลังเผชิญให้ชัดเจน เพื่อให้การเปิดดวงตรงจุด', cta: 'เริ่มต้นผ่าน LINE →', ctaHref: LINE },
-  { num: 'ขั้นตอนที่ 2', title: 'เลือกวันและเวลาที่สะดวก', desc: 'นัดหมายล่วงหน้าตามเวลาที่คุณสะดวก', cta: 'เช็กคิวดูดวง →', ctaHref: BOOKING },
-  { num: 'ขั้นตอนที่ 3', title: 'เปิดดวงส่วนตัวกับหมอแจว', desc: 'พูดคุยและเปิดดวงแบบตัวต่อตัวทางโทรศัพท์', cta: 'จองเวลาปรึกษา →', ctaHref: BOOKING },
+  { num: 'ขั้นตอนที่ 1', title: 'เลือกวันและเวลาที่สะดวก', desc: 'เลือกจากรอบคิวที่เปิดให้จอง', cta: 'เริ่มต้นผ่าน LINE →', ctaHref: LINE },
+  { num: 'ขั้นตอนที่ 2', title: 'ส่งข้อมูลและยืนยันคิว', desc: 'เตรียมวันเดือนปีเกิด รูปหน้าตรง เบอร์โทร และหลักฐานการชำระเงิน', cta: 'เช็กคิวดูดวง →', ctaHref: BOOKING },
+  { num: 'ขั้นตอนที่ 3', title: 'รับสายเปิดดวงกับหมอแจว', desc: 'เปิดได้ทุกเรื่องในคิวเดียว ถามได้ระหว่างการคุย', cta: 'จองเวลาปรึกษา →', ctaHref: BOOKING },
 ];
 
 const faqData = [
@@ -310,10 +309,10 @@ export function Home() {
           </div>
           <div>
             <p className="home-about-cred" style={{ fontSize: 'clamp(14px, 3.8vw, 16px)', letterSpacing: 0, color: '#B0863C', fontWeight: 600, lineHeight: 1.5, margin: '0 0 8px' }}>ประสบการณ์กว่า 30 ปี ในศาสตร์จีนและโหงวเฮ้ง</p>
-            <div className="home-about-eyebrow" style={{ fontSize: '14px', letterSpacing: 0, wordSpacing: 0, lineHeight: 1.35, color: '#B0863C', fontWeight: 600, marginBottom: '14px' }}>เมื่อเรื่องสำคัญ ไม่ควรฝากไว้กับคำตอบทั่วไป</div>
+            <div className="home-about-eyebrow" style={{ fontSize: '14px', letterSpacing: 0, wordSpacing: 0, lineHeight: 1.35, color: '#B0863C', fontWeight: 600, marginBottom: '14px' }}>ได้รับคำเชิญให้เดินทางไปประเทศจีน เพื่อเปิดดวงแก่ลูกค้าชาวจีน</div>
             <Diamond />
-            <h2 className="home-section-title" style={{ fontFamily: "'Noto Serif Thai', serif", fontWeight: 700, fontSize: '40px', lineHeight: 1.3, color: '#15233A', margin: '0 0 22px' }}>การดูดวงที่เริ่มจากพื้นดวงของคุณ<br />ไม่ใช่คำทำนายสำเร็จรูป</h2>
-            <p style={{ fontSize: '18px', color: '#514C3E', margin: '0 0 30px' }}>หมอแจวอ่านพื้นดวงและโหงวเฮ้งจากเรื่องที่คุณกำลังเผชิญ<br />เพื่อมองจังหวะ เหตุปัจจัย และสิ่งที่ซ่อนอยู่ในแต่ละเรื่อง<br />ไม่ว่าจะเป็นความรัก งาน เงิน ธุรกิจ หรือการตัดสินใจสำคัญ</p>
+            <h2 className="home-section-title" style={{ fontFamily: "'Noto Serif Thai', serif", fontWeight: 700, fontSize: '40px', lineHeight: 1.3, color: '#15233A', margin: '0 0 22px' }}>การเปิดดวงที่ดูทั้งพื้นดวงและโหงวเฮ้ง<br />ไม่ใช่คำทำนายสำเร็จรูป</h2>
+            <p style={{ fontSize: '18px', color: '#514C3E', margin: '0 0 30px' }}>ทุกคิวเริ่มจากเรื่องจริงที่คุณกำลังเผชิญ<br />ประกอบกับวันเดือนปีเกิดและรูปหน้าตรงปัจจุบัน<br />เพื่ออ่านจังหวะชีวิต เรื่องที่ควรเดินหน้า<br />และสิ่งที่ต้องระวังก่อนตัดสินใจ</p>
             <div className="home-about-points" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '14px' }}>              {aboutPoints.map((p) => (
                 <div key={p} style={{ display: 'flex', alignItems: 'flex-start', gap: '12px', background: 'rgba(255,255,255,.6)', border: '1px solid #E7DcC2', borderRadius: '12px', padding: '15px 17px' }}>
                   <span style={{ flex: 'none', width: '24px', height: '24px', borderRadius: '50%', background: '#4F6E58', color: '#fff', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '13px', marginTop: '2px' }}>✓</span>
@@ -330,30 +329,30 @@ export function Home() {
         <div style={{ marginBottom: '46px', maxWidth: '640px' }}>
           <div className="home-eyebrow" style={eyebrow}>ได้รับความไว้วางใจในเรื่องสำคัญ</div>
           <Diamond />
-          <h2 className="home-section-title" style={{ fontFamily: "'Noto Serif Thai', serif", fontWeight: 700, fontSize: '40px', color: '#15233A', margin: '0 0 14px' }}>กิจกรรมและการเดินทางของหมอแจว</h2>          <p style={{ fontSize: '18px', color: '#6B6450', margin: 0 }}>เส้นทางการทำงานที่สั่งสมมาอย่างต่อเนื่อง</p>
+          <h2 className="home-section-title" style={{ fontFamily: "'Noto Serif Thai', serif", fontWeight: 700, fontSize: '40px', color: '#15233A', margin: '0 0 14px' }}>ภาพจากการเดินทางเปิดดวงในประเทศจีน</h2>          <p style={{ fontSize: '18px', color: '#6B6450', margin: 0 }}>การพบปะลูกค้าและเยี่ยมชมสถานที่ระหว่างการเดินทาง</p>
         </div>
         <div className="home-gallery-layout" style={{ display: 'flex', gap: '18px' }}>
           <div className="home-gallery-main" style={{ flex: '1.7', display: 'flex', flexDirection: 'column', gap: '18px' }}>
             <figure style={{ position: 'relative', margin: 0, borderRadius: '16px', overflow: 'hidden', boxShadow: '0 14px 36px rgba(60,45,20,.14)' }}>
-              <img src="/assets/activity-rollsroyce.jpg" alt="หมอแจวกับลูกค้าระหว่างทำงานต่างประเทศ" style={{ width: '100%', height: '384px', objectFit: 'cover', display: 'block' }} />              <figcaption style={{ position: 'absolute', left: 0, right: 0, bottom: 0, padding: '22px 24px 18px', background: 'linear-gradient(0deg, rgba(20,30,50,.78), transparent)', color: '#fff', fontSize: '15px', fontWeight: 500 }}>ดูแลลูกค้าระดับธุรกิจระหว่างเดินทางทำงานต่างประเทศ</figcaption>
+              <img src="/assets/activity-rollsroyce.jpg" alt="หมอแจวกับลูกค้าระหว่างทำงานต่างประเทศ" style={{ width: '100%', height: '384px', objectFit: 'cover', display: 'block' }} />              <figcaption style={{ position: 'absolute', left: 0, right: 0, bottom: 0, padding: '22px 24px 18px', background: 'linear-gradient(0deg, rgba(20,30,50,.78), transparent)', color: '#fff', fontSize: '15px', fontWeight: 500 }}>ภาพจากการเดินทางไปประเทศจีน</figcaption>
             </figure>
             <div className="home-gallery-side" style={{ display: 'flex', gap: '18px' }}>              <figure style={{ position: 'relative', margin: 0, flex: 1, borderRadius: '16px', overflow: 'hidden', boxShadow: '0 10px 26px rgba(60,45,20,.12)' }}>
                 <img src="/assets/activity-consult.jpg" alt="บรรยากาศการให้คำปรึกษากับลูกค้า" style={{ width: '100%', height: '248px', objectFit: 'cover', display: 'block' }} />
-                <figcaption style={{ position: 'absolute', left: 0, right: 0, bottom: 0, padding: '16px 18px 13px', background: 'linear-gradient(0deg, rgba(20,30,50,.74), transparent)', color: '#fff', fontSize: '14px', fontWeight: 500 }}>พูดคุยให้คำปรึกษาแบบใกล้ชิด</figcaption>
+                <figcaption style={{ position: 'absolute', left: 0, right: 0, bottom: 0, padding: '16px 18px 13px', background: 'linear-gradient(0deg, rgba(20,30,50,.74), transparent)', color: '#fff', fontSize: '14px', fontWeight: 500 }}>การพบปะลูกค้าระหว่างการเดินทาง</figcaption>
               </figure>
               <figure style={{ position: 'relative', margin: 0, flex: 1, borderRadius: '16px', overflow: 'hidden', boxShadow: '0 10px 26px rgba(60,45,20,.12)' }}>
                 <img src="/assets/activity-table.jpg" alt="ดูฮวงจุ้ยสถานที่และพื้นที่ธุรกิจ" style={{ width: '100%', height: '248px', objectFit: 'cover', display: 'block' }} />
-                <figcaption style={{ position: 'absolute', left: 0, right: 0, bottom: 0, padding: '16px 18px 13px', background: 'linear-gradient(0deg, rgba(20,30,50,.74), transparent)', color: '#fff', fontSize: '14px', fontWeight: 500 }}>ตรวจฮวงจุ้ยสถานที่และพื้นที่ธุรกิจ</figcaption>
+                <figcaption style={{ position: 'absolute', left: 0, right: 0, bottom: 0, padding: '16px 18px 13px', background: 'linear-gradient(0deg, rgba(20,30,50,.74), transparent)', color: '#fff', fontSize: '14px', fontWeight: 500 }}>เยี่ยมชมสถานที่ในประเทศจีน</figcaption>
               </figure>
             </div>
           </div>
           <figure className="home-gallery-tall" style={{ position: 'relative', margin: 0, flex: 1, borderRadius: '16px', overflow: 'hidden', boxShadow: '0 14px 36px rgba(60,45,20,.14)' }}>            <img src="/assets/activity-redcarpet.jpg" alt="หมอแจวในงานต้อนรับลูกค้าคนสำคัญ" style={{ width: '100%', height: '650px', objectFit: 'cover', display: 'block' }} />
-            <figcaption style={{ position: 'absolute', left: 0, right: 0, bottom: 0, padding: '22px 24px 18px', background: 'linear-gradient(0deg, rgba(20,30,50,.78), transparent)', color: '#fff', fontSize: '15px', fontWeight: 500 }}>ได้รับการต้อนรับในงานสำคัญของลูกค้า</figcaption>
+            <figcaption style={{ position: 'absolute', left: 0, right: 0, bottom: 0, padding: '22px 24px 18px', background: 'linear-gradient(0deg, rgba(20,30,50,.78), transparent)', color: '#fff', fontSize: '15px', fontWeight: 500 }}>ภาพจากการเดินทางเปิดดวง</figcaption>
           </figure>
         </div>
 
         <div style={{ marginTop: '44px' }}>
-          <div style={{ ...eyebrow, textAlign: 'center', marginBottom: '20px' }}>ภาพจากกิจกรรมและการพบปะในช่วงเวลาต่าง ๆ</div>
+          <div style={{ ...eyebrow, textAlign: 'center', marginBottom: '20px' }}>ภาพจากการเดินทางและการเปิดดวงแก่ลูกค้าชาวจีน</div>
           <div className="mq-wrap" style={{ overflow: 'hidden', WebkitMaskImage: 'linear-gradient(90deg, transparent, #000 5%, #000 95%, transparent)', maskImage: 'linear-gradient(90deg, transparent, #000 5%, #000 95%, transparent)' }}>
             <div className="mq">
               {[...marquee, ...marquee].map((src, i) => (
@@ -434,12 +433,12 @@ export function Home() {
         <div className="home-pricing-grid" style={{ position: 'relative', zIndex: 1, maxWidth: '1200px', margin: '0 auto', padding: '86px 40px', display: 'grid', gridTemplateColumns: '1fr 0.9fr', gap: '60px', alignItems: 'center' }}>
           <div>
             <Diamond />
-            <h2 className="home-pricing-title" style={{ fontFamily: "'Noto Serif Thai', serif", fontWeight: 700, fontSize: '42px', lineHeight: 1.3, color: '#15233A', margin: '0 0 22px' }}>คิวดูดวงส่วนตัว</h2>
-            <p style={{ fontSize: '18px', color: '#514C3E', margin: '0 0 18px' }}>เปิดดวงได้หลายเรื่องภายในคิวเดียว</p>
-            <p style={{ fontSize: '18px', color: '#514C3E', margin: 0 }}>นัดหมายเวลาล่วงหน้า<br />ยืนยันคิวหลังชำระเงิน</p>
+            <h2 className="home-pricing-title" style={{ fontFamily: "'Noto Serif Thai', serif", fontWeight: 700, fontSize: '42px', lineHeight: 1.3, color: '#15233A', margin: '0 0 22px' }}>คิวเปิดดวงส่วนตัว</h2>
+            <p style={{ fontSize: '18px', color: '#514C3E', margin: '0 0 18px' }}>ดูดวงสดทางโทรศัพท์ เปิดได้ทุกเรื่องในคิวเดียว</p>
+            <p style={{ fontSize: '18px', color: '#514C3E', margin: 0 }}>เลือกวันและเวลาที่สะดวก<br />ยืนยันคิวหลังชำระเงินและส่งหลักฐานการโอน</p>
           </div>
           <div className="home-pricing-card" style={{ background: '#fff', border: '1px solid #E8DcBC', borderRadius: '24px', padding: '44px 44px 38px', boxShadow: '0 22px 50px rgba(120,95,40,.12)', textAlign: 'center' }}>
-            <h3 style={{ fontFamily: "'Noto Serif Thai', serif", fontWeight: 700, fontSize: '28px', color: '#15233A', margin: '0 0 22px', lineHeight: 1.35 }}>ค่าดูดวง</h3>
+            <h3 style={{ fontFamily: "'Noto Serif Thai', serif", fontWeight: 700, fontSize: '28px', color: '#15233A', margin: '0 0 22px', lineHeight: 1.35 }}>ค่าบูชาครู</h3>
             <div style={{ display: 'flex', alignItems: 'baseline', justifyContent: 'center', gap: '8px', marginBottom: '4px' }}>
               <span className="home-pricing-price" style={{ fontFamily: "'Noto Serif Thai', serif", fontSize: '64px', fontWeight: 700, color: '#15233A', lineHeight: 1 }}>{site.priceStart}</span>
               <span style={{ fontSize: '22px', color: '#15233A', fontWeight: 600 }}>บาท</span>
