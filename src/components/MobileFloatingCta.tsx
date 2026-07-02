@@ -37,7 +37,7 @@ export function MobileFloatingCta() {
       aria-hidden={hidden}
     >
       <a className="home-mobile-floating-cta__btn" href={site.bookingUrl}>
-        เช็กคิวปรึกษา
+        เช็กคิวดูดวง
       </a>
     </div>
   );

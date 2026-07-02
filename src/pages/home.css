@@ -26,6 +26,42 @@
   flex-shrink: 0;
 }
 
+/* Desktop: land on hero — full dragon size, soften spacing only on short screens */
+@media (min-width: 981px) {
+  .home-hero {
+    min-height: calc(100svh - var(--home-header-h));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .home-hero-grid {
+    width: 100%;
+  }
+}
+
+@media (min-width: 981px) and (max-height: 820px) {
+  .home-hero-grid {
+    padding-top: 48px !important;
+    padding-bottom: 40px !important;
+    gap: 32px !important;
+  }
+
+  .home-hero-badge {
+    margin-bottom: 16px !important;
+  }
+
+  .home-hero-title {
+    font-size: 48px !important;
+    margin-bottom: 16px !important;
+  }
+
+  .home-hero-lead {
+    font-size: 17px !important;
+    margin-bottom: 24px !important;
+  }
+}
+
 .home-divider img {
   max-width: min(340px, 100%);
   height: auto;

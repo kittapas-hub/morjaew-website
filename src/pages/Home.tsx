@@ -29,15 +29,15 @@ function Icon({ paths }: { paths: string }) {
 }
 
 const services = [
-  { title: 'ความรักและคู่ครอง', desc: 'คนที่อยู่ข้างคุณวันนี้ คือคนที่ควรไปต่อด้วยกัน หรือเป็นความสัมพันธ์ที่กำลังทำให้คุณเหนื่อยอยู่ฝ่ายเดียว', paths: '<circle cx="8" cy="9" r="3"/><circle cx="16" cy="9" r="3"/><path d="M5 19c0-2.5 2-4 5-4M19 19c0-2.5-2-4-5-4"/>' },
-  { title: 'งานและธุรกิจ', desc: 'จะเปลี่ยนงาน ขยายกิจการ ร่วมมือกับใคร หรือไปต่อกับทางเดิม หมอแจวช่วยดูจังหวะและจุดที่ควรรอบคอบ', paths: '<path d="M4 8h16v11H4z"/><path d="M9 8V6a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2"/>' },
-  { title: 'การเงินและการตัดสินใจสำคัญ', desc: 'เงินก้อนหนึ่ง โอกาสหนึ่ง หรือแผนหนึ่ง อาจเปลี่ยนหลายอย่างในชีวิต ควรเดินหน้า รอ หรือระวังตรงไหน', paths: '<circle cx="12" cy="12" r="8"/><path d="M12 8v8M9.5 10.5h3.5a1.5 1.5 0 0 1 0 3h-2a1.5 1.5 0 0 0 0 3H14"/>' },
-  { title: 'โหงวเฮ้งและจังหวะชีวิต', desc: 'ดูจุดแข็ง บุคลิกภาพ และจังหวะชีวิต เพื่อเข้าใจตัวเองมากขึ้นก่อนเลือกทางสำคัญ', paths: '<circle cx="12" cy="12" r="8"/><circle cx="9" cy="10" r="1"/><circle cx="15" cy="11" r="1"/><circle cx="12" cy="15" r="1"/>' },
+  { title: 'ความรักและคู่ครอง', desc: 'จังหวะของความสัมพันธ์ เนื้อคู่ และเรื่องที่ค้างคาใจ', paths: '<circle cx="8" cy="9" r="3"/><circle cx="16" cy="9" r="3"/><path d="M5 19c0-2.5 2-4 5-4M19 19c0-2.5-2-4-5-4"/>' },
+  { title: 'งาน ธุรกิจ และการลงทุน', desc: 'ทิศทางหน้าที่การงาน จังหวะการลงทุน และการตัดสินใจสำคัญทางธุรกิจ', paths: '<path d="M4 8h16v11H4z"/><path d="M9 8V6a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2"/>' },
+  { title: 'การเงินและโอกาสสำคัญ', desc: 'โอกาสที่กำลังเข้ามา และสิ่งที่ควรระวังเรื่องเงิน', paths: '<circle cx="12" cy="12" r="8"/><path d="M12 8v8M9.5 10.5h3.5a1.5 1.5 0 0 1 0 3h-2a1.5 1.5 0 0 0 0 3H14"/>' },
+  { title: 'ครอบครัว ความสัมพันธ์ และจังหวะชีวิต', desc: 'เรื่องในครอบครัวและจังหวะชีวิตที่กำลังเปลี่ยนผ่าน', paths: '<circle cx="12" cy="12" r="8"/><circle cx="9" cy="10" r="1"/><circle cx="15" cy="11" r="1"/><circle cx="12" cy="15" r="1"/>' },
 ];
 
 const aboutPoints = [
-  'อ่านจากพื้นดวงและเรื่องที่คุณกำลังเผชิญ',
-  'ใช้ศาสตร์จีนและโหงวเฮ้งประกอบการพิจารณา',
+  'อ่านพื้นดวงควบคู่กับเรื่องที่คุณกำลังเผชิญ',
+  'ใช้ศาสตร์จีนและโหงวเฮ้งประกอบการเปิดดวง',
   'มองจังหวะที่ควรเดินหน้า รอ หรือระวัง',
   'ดูดวงส่วนตัวตามเวลานัดหมาย',
 ];
@@ -45,8 +45,8 @@ const aboutPoints = [
 const whyUs = [
   { num: '01', title: 'เรื่องที่คุณกำลังเจอ มีความหมายอย่างไร', desc: 'มองภาพรวมของปัญหา ว่าอะไรคือจุดสำคัญที่คุณกำลังเผชิญ' },
   { num: '02', title: 'คนที่เกี่ยวข้อง ควรไว้ใจแค่ไหน', desc: 'ใช้โหงวเฮ้งและข้อมูลที่มี เพื่ออ่านลักษณะ นิสัย และจังหวะความสัมพันธ์' },
-  { num: '03', title: 'ควรเดินหน้า รอ หรือถอยมาตั้งหลัก', desc: 'ช่วยให้เห็นจังหวะที่ควรเร่ง จังหวะที่ควรรอ และสิ่งที่ควรระวัง' },
-  { num: '04', title: 'สิ่งที่คุณอาจยังไม่ทันมองเห็น', desc: 'เปิดอีกมุมหนึ่งของเรื่องเดิม เพื่อให้ตัดสินใจโดยไม่ใช้อารมณ์เพียงอย่างเดียว' },
+  { num: '03', title: 'ควรเดินหน้า รอ หรือถอยมาตั้งหลัก', desc: 'มองเห็นจังหวะที่ควรเร่ง จังหวะที่ควรรอ และสิ่งที่ควรระวัง' },
+  { num: '04', title: 'สิ่งที่คุณยังไม่ทันมองเห็น', desc: 'เปิดอีกมุมหนึ่งของเรื่องเดิม เพื่อให้ตัดสินใจโดยไม่ใช้อารมณ์เพียงอย่างเดียว' },
 ];
 
 const pricingCardIncludes = [
@@ -57,9 +57,9 @@ const pricingCardIncludes = [
 ];
 
 const consultSteps = [
-  { num: 'ขั้นตอนที่ 1', title: 'ส่งเรื่องที่อยากรู้ให้ชัด', desc: 'บอกสิ่งที่กำลังทำให้คุณลังเล กังวล หรือยังตัดสินใจไม่ลง', cta: 'เริ่มต้นผ่าน LINE →', ctaHref: LINE },
-  { num: 'ขั้นตอนที่ 2', title: 'เลือกวันและเวลาที่สะดวก', desc: 'เลือกจากรอบคิวที่เปิดให้จอง เพื่อเตรียมเวลาพูดคุยอย่างเหมาะสม', cta: 'เช็กคิวปรึกษา →', ctaHref: BOOKING },
-  { num: 'ขั้นตอนที่ 3', title: 'พูดคุยส่วนตัวทางโทรศัพท์', desc: 'นำเรื่องสำคัญของคุณมาพูดคุยกับหมอแจวตามเวลานัดหมาย', cta: 'จองเวลาปรึกษา →', ctaHref: BOOKING },
+  { num: 'ขั้นตอนที่ 1', title: 'ส่งเรื่องที่ต้องการเปิดดวง', desc: 'บอกเรื่องที่กำลังเผชิญให้ชัดเจน เพื่อให้การเปิดดวงตรงจุด', cta: 'เริ่มต้นผ่าน LINE →', ctaHref: LINE },
+  { num: 'ขั้นตอนที่ 2', title: 'เลือกวันและเวลาที่สะดวก', desc: 'นัดหมายล่วงหน้าตามเวลาที่คุณสะดวก', cta: 'เช็กคิวดูดวง →', ctaHref: BOOKING },
+  { num: 'ขั้นตอนที่ 3', title: 'เปิดดวงส่วนตัวกับหมอแจว', desc: 'พูดคุยและเปิดดวงแบบตัวต่อตัวทางโทรศัพท์', cta: 'จองเวลาปรึกษา →', ctaHref: BOOKING },
 ];
 
 const faqData = [
@@ -186,6 +186,12 @@ export function Home() {
   const headerScrolled = useHeaderScroll();
   useScrollLock(menuOpen);
   useAnchorScroll(closeMenu);
+
+  useEffect(() => {
+    if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
+    if (!window.location.hash) window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div className="home" style={{ fontFamily: "'Noto Sans Thai', sans-serif", backgroundColor: '#FBF7EF', backgroundImage: 'radial-gradient(rgba(176,134,60,0.10) 1px, transparent 1.6px)', backgroundSize: '24px 24px', color: '#29271F', overflowX: 'clip', lineHeight: 1.7 }}>      <style>{`
         .svc-card{position:relative;display:flex;flex-direction:column;transition:box-shadow .25s,transform .25s,border-color .25s}
@@ -221,12 +227,12 @@ export function Home() {
               <span className="home-nav-toggle__bar" />
             </button>
             <nav id="home-nav" className={`home-nav${menuOpen ? ' home-nav--open' : ''}`} style={{ display: 'flex', alignItems: 'center', gap: '30px' }}>
-              <a href="#services" style={navLink}>เรื่องที่ปรึกษา</a>
+              <a href="#services" style={navLink}>เรื่องที่เปิดดวง</a>
               <a href="#about" style={navLink}>หมอแจว</a>
               <a href="#proof" style={navLink}>กิจกรรม</a>
-              <a href="#pricing" style={navLink}>ค่าปรึกษา</a>
+              <a href="#pricing" style={navLink}>ค่าดูดวง</a>
               <a href={BOOKING} style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', background: '#06C755', color: '#fff', textDecoration: 'none', fontWeight: 700, fontSize: '15px', padding: '10px 20px', borderRadius: '999px', boxShadow: '0 6px 16px rgba(6,199,85,.28)' }}>
-                <span style={{ width: '8px', height: '8px', background: '#fff', borderRadius: '50%', display: 'inline-block' }} />เช็กคิวปรึกษา
+                <span style={{ width: '8px', height: '8px', background: '#fff', borderRadius: '50%', display: 'inline-block' }} />เช็กคิวดูดวง
               </a>
             </nav>
           </div>
@@ -234,36 +240,36 @@ export function Home() {
       </header>
       <div className="home-header-spacer" aria-hidden="true" />
       {/* ============ 1 · HERO ============ */}
-      <section style={{ position: 'relative', overflow: 'hidden', background: 'radial-gradient(120% 120% at 80% 0%, #F6EEDC 0%, #FBF7EF 55%)' }}>
+      <section className="home-hero" style={{ position: 'relative', overflow: 'hidden', background: 'radial-gradient(120% 120% at 80% 0%, #F6EEDC 0%, #FBF7EF 55%)' }}>
         <img src="/assets/mountain.png" alt="" style={{ position: 'absolute', left: 0, right: 0, bottom: 0, width: '100%', opacity: 0.5, pointerEvents: 'none', zIndex: 0 }} />
         <div className="home-hero-grid" style={{ position: 'relative', zIndex: 1, maxWidth: '1200px', margin: '0 auto', padding: '92px 40px 84px', display: 'grid', gridTemplateColumns: '1.15fr 0.85fr', gap: '48px', alignItems: 'center' }}>
           <div>
             <div className="home-hero-badge" style={{ display: 'inline-flex', alignItems: 'center', gap: '10px', background: '#fff', border: '1px solid #E8DcBC', padding: '7px 16px', borderRadius: '999px', marginBottom: '26px', boxShadow: '0 2px 10px rgba(120,95,40,.06)' }}>
               <span style={{ width: '7px', height: '7px', borderRadius: '50%', background: '#4F6E58' }} />
-              <span style={{ fontSize: '13.5px', color: '#6E6550', fontWeight: 600, letterSpacing: '.4px' }}>คำปรึกษาดวงส่วนตัว โดยหมอแจว พ่อปู่โหรา</span>
+              <span style={{ fontSize: '13.5px', color: '#6E6550', fontWeight: 600, letterSpacing: '.4px' }}>เปิดดวงส่วนตัว โดยหมอแจว พ่อปู่โหรา</span>
             </div>
             <h1 className="home-hero-title" style={{ fontFamily: "'Noto Serif Thai', serif", fontWeight: 700, fontSize: '56px', lineHeight: 1.22, color: '#15233A', margin: '0 0 22px', letterSpacing: '-.3px' }}>
-              เรื่องที่คุณยังมองไม่เห็น<br />
-              หมอแจวอาจเห็นก่อน<br />
-              <span style={{ color: '#B0863C' }}>ดูจากดวงและโหงวเฮ้ง<br />เพื่ออ่านจังหวะชีวิตให้ชัด</span>
+              เรื่องที่คุณกำลังเผชิญ<br />
+              มีคำตอบอยู่ในพื้นดวง<br />
+              <span style={{ color: '#B0863C' }}>เปิดดวงกับหมอแจว<br />ก่อนตัดสินใจครั้งสำคัญ</span>
             </h1>
             <p className="home-hero-lead" style={{ fontSize: '19px', color: '#5F5949', maxWidth: '500px', margin: '0 0 36px' }}>
-              เรื่องรัก งาน เงิน ธุรกิจ หรือการตัดสินใจครั้งสำคัญ<br />
-              หมอแจวจะดูจากพื้นดวงและโหงวเฮ้ง เพื่อชี้ให้เห็น<br />
-              จังหวะที่ควรเดินหน้า เรื่องที่ควรรอ<br />
+              เรื่องรัก งาน เงิน ธุรกิจ หรือชีวิตที่กำลังติดอยู่กับทางเลือก<br />
+              หมอแจวอ่านจากพื้นดวงและโหงวเฮ้ง<br />
+              เพื่อให้เห็นจังหวะที่ควรเดินหน้า เรื่องที่ควรรอ<br />
               และสิ่งที่ไม่ควรมองข้าม
             </p>
             <div className="home-hero-actions" style={{ display: 'flex', alignItems: 'center', gap: '16px', flexWrap: 'wrap' }}>
               <a href={BOOKING} style={{ display: 'inline-flex', alignItems: 'center', gap: '11px', background: '#06C755', color: '#fff', textDecoration: 'none', fontWeight: 700, fontSize: '19px', padding: '17px 34px', borderRadius: '999px', boxShadow: '0 12px 26px rgba(6,199,85,.32)' }}>
                 <span style={{ width: '22px', height: '22px', borderRadius: '6px', background: '#fff', color: '#06C755', fontWeight: 800, fontSize: '12px', display: 'inline-flex', alignItems: 'center', justifyContent: 'center' }}>L</span>
-                ให้หมอแจวช่วยดู
+                เปิดดวงกับหมอแจว
               </a>
               <a href="#services" style={{ display: 'inline-flex', alignItems: 'center', gap: '9px', background: 'transparent', color: '#3A372D', textDecoration: 'none', fontWeight: 600, fontSize: '17px', padding: '16px 26px', borderRadius: '999px', border: '1.5px solid #D8C9A4' }}>
-                ดูบริการทั้งหมด
+                ดูเรื่องที่เปิดดวงได้
               </a>
             </div>
-            <p style={{ fontSize: '13.5px', color: '#9A8F73', margin: '14px 0 0', letterSpacing: '.2px' }}>
-              ปรึกษาส่วนตัวทางโทรศัพท์ · นัดหมายล่วงหน้า
+            <p className="home-hero-helper" style={{ fontSize: '13.5px', color: '#9A8F73', margin: '14px 0 0', letterSpacing: '.2px' }}>
+              ดูดวงส่วนตัวทางโทรศัพท์ · นัดหมายล่วงหน้า
             </p>
           </div>
           <div className="home-hero-visual" style={{ position: 'relative', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
@@ -279,7 +285,7 @@ export function Home() {
         <div style={{ textAlign: 'center', marginBottom: '52px' }}>
           <div className="home-eyebrow" style={eyebrow}>เรื่องที่คนมักเก็บไว้คิดคนเดียว</div>
           <Divider />
-          <h2 id="services" className="home-section-title" style={{ fontFamily: "'Noto Serif Thai', serif", fontWeight: 700, fontSize: '40px', color: '#15233A', margin: '0 0 14px' }}>บางคำถามไม่มีใครตอบแทนคุณได้<br />แต่คุณไม่จำเป็นต้องหาคำตอบคนเดียว</h2>          <p style={{ fontSize: '18px', color: '#6B6450', maxWidth: '560px', margin: '0 auto' }}>ภายในหนึ่งคิว คุณนำทุกเรื่องที่กำลังค้างอยู่ในใจมาพูดคุยได้<br />เพราะเรื่องความรัก งาน เงิน และครอบครัว<br />หลายครั้งเกี่ยวข้องกันมากกว่าที่คิด</p>
+          <h2 id="services" className="home-section-title" style={{ fontFamily: "'Noto Serif Thai', serif", fontWeight: 700, fontSize: '40px', color: '#15233A', margin: '0 0 14px' }}>เรื่องที่เปิดดวงให้คุณได้ในคิวเดียว</h2>          <p style={{ fontSize: '18px', color: '#6B6450', maxWidth: '560px', margin: '0 auto' }}>หนึ่งคิวดูดวงส่วนตัว เปิดได้หลายเรื่องพร้อมกัน ตามเรื่องที่คุณกำลังเผชิญอยู่ในตอนนี้</p>
         </div>
         <div className="home-services-grid" style={{ display: 'grid', gap: '22px' }}>          {services.map((s) => (
             <div key={s.title} className="svc-card" style={{ background: 'linear-gradient(180deg, #fff, #FFFDF8)', border: '1px solid #EDE4D0', borderRadius: '18px', padding: '30px 28px', boxShadow: '0 4px 20px rgba(120,95,40,.04)', overflow: 'hidden', color: 'inherit' }}>
@@ -306,8 +312,8 @@ export function Home() {
             <p className="home-about-cred" style={{ fontSize: 'clamp(14px, 3.8vw, 16px)', letterSpacing: 0, color: '#B0863C', fontWeight: 600, lineHeight: 1.5, margin: '0 0 8px' }}>ประสบการณ์กว่า 30 ปี ในศาสตร์จีนและโหงวเฮ้ง</p>
             <div className="home-about-eyebrow" style={{ fontSize: '14px', letterSpacing: 0, wordSpacing: 0, lineHeight: 1.35, color: '#B0863C', fontWeight: 600, marginBottom: '14px' }}>เมื่อเรื่องสำคัญ ไม่ควรฝากไว้กับคำตอบทั่วไป</div>
             <Diamond />
-            <h2 className="home-section-title" style={{ fontFamily: "'Noto Serif Thai', serif", fontWeight: 700, fontSize: '40px', lineHeight: 1.3, color: '#15233A', margin: '0 0 22px' }}>การดูดวงที่เริ่มจากเรื่องของคุณ<br />ไม่ใช่คำทำนายสำเร็จรูป</h2>
-            <p style={{ fontSize: '18px', color: '#514C3E', margin: '0 0 30px' }}>หมอแจวใช้ศาสตร์จีนและโหงวเฮ้งประกอบการอ่านพื้นดวง<br />เพื่อมองจังหวะและปัจจัยของเรื่องที่คุณกำลังเผชิญ<br />ไม่ว่าจะเป็นความรัก งาน เงิน ธุรกิจ หรือการตัดสินใจสำคัญ</p>
+            <h2 className="home-section-title" style={{ fontFamily: "'Noto Serif Thai', serif", fontWeight: 700, fontSize: '40px', lineHeight: 1.3, color: '#15233A', margin: '0 0 22px' }}>การดูดวงที่เริ่มจากพื้นดวงของคุณ<br />ไม่ใช่คำทำนายสำเร็จรูป</h2>
+            <p style={{ fontSize: '18px', color: '#514C3E', margin: '0 0 30px' }}>หมอแจวอ่านพื้นดวงและโหงวเฮ้งจากเรื่องที่คุณกำลังเผชิญ<br />เพื่อมองจังหวะ เหตุปัจจัย และสิ่งที่ซ่อนอยู่ในแต่ละเรื่อง<br />ไม่ว่าจะเป็นความรัก งาน เงิน ธุรกิจ หรือการตัดสินใจสำคัญ</p>
             <div className="home-about-points" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '14px' }}>              {aboutPoints.map((p) => (
                 <div key={p} style={{ display: 'flex', alignItems: 'flex-start', gap: '12px', background: 'rgba(255,255,255,.6)', border: '1px solid #E7DcC2', borderRadius: '12px', padding: '15px 17px' }}>
                   <span style={{ flex: 'none', width: '24px', height: '24px', borderRadius: '50%', background: '#4F6E58', color: '#fff', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '13px', marginTop: '2px' }}>✓</span>
@@ -324,7 +330,7 @@ export function Home() {
         <div style={{ marginBottom: '46px', maxWidth: '640px' }}>
           <div className="home-eyebrow" style={eyebrow}>ได้รับความไว้วางใจในเรื่องสำคัญ</div>
           <Diamond />
-          <h2 className="home-section-title" style={{ fontFamily: "'Noto Serif Thai', serif", fontWeight: 700, fontSize: '40px', color: '#15233A', margin: '0 0 14px' }}>เมื่อการตัดสินใจไม่ได้กระทบแค่วันนี้<br />แต่ส่งผลต่อชีวิต ครอบครัว และธุรกิจในระยะยาว</h2>          <p style={{ fontSize: '18px', color: '#6B6450', margin: 0 }}>ตลอดเส้นทางการให้คำปรึกษา หมอแจวได้รับความไว้วางใจจากผู้ประกอบการ<br />ผู้บริหาร และผู้ที่ต้องตัดสินใจในเรื่องสำคัญของชีวิตและธุรกิจ<br />เพราะบางเรื่องไม่ควรใช้ความรู้สึกเพียงอย่างเดียวในการเลือกทางต่อไป</p>
+          <h2 className="home-section-title" style={{ fontFamily: "'Noto Serif Thai', serif", fontWeight: 700, fontSize: '40px', color: '#15233A', margin: '0 0 14px' }}>กิจกรรมและการเดินทางของหมอแจว</h2>          <p style={{ fontSize: '18px', color: '#6B6450', margin: 0 }}>เส้นทางการทำงานที่สั่งสมมาอย่างต่อเนื่อง</p>
         </div>
         <div className="home-gallery-layout" style={{ display: 'flex', gap: '18px' }}>
           <div className="home-gallery-main" style={{ flex: '1.7', display: 'flex', flexDirection: 'column', gap: '18px' }}>
@@ -347,7 +353,7 @@ export function Home() {
         </div>
 
         <div style={{ marginTop: '44px' }}>
-          <div style={{ ...eyebrow, textAlign: 'center', marginBottom: '20px' }}>ภาพบรรยากาศเพิ่มเติม</div>
+          <div style={{ ...eyebrow, textAlign: 'center', marginBottom: '20px' }}>ภาพจากกิจกรรมและการพบปะในช่วงเวลาต่าง ๆ</div>
           <div className="mq-wrap" style={{ overflow: 'hidden', WebkitMaskImage: 'linear-gradient(90deg, transparent, #000 5%, #000 95%, transparent)', maskImage: 'linear-gradient(90deg, transparent, #000 5%, #000 95%, transparent)' }}>
             <div className="mq">
               {[...marquee, ...marquee].map((src, i) => (
@@ -394,7 +400,7 @@ export function Home() {
           ))}
         </div>
         <div style={{ textAlign: 'center', marginTop: '36px' }}>
-          <a href={BOOKING} className="home-consult-cta">เช็กคิวปรึกษา →</a>
+          <a href={BOOKING} className="home-consult-cta">เช็กคิวดูดวงกับหมอแจว →</a>
         </div>
       </section>
 
@@ -404,10 +410,10 @@ export function Home() {
           <img src="/assets/cloud.png" alt="" style={{ position: 'absolute', left: '-30px', bottom: '-36px', width: '320px', height: 'auto', opacity: 0.55, pointerEvents: 'none', transform: 'scaleX(-1)' }} />
           <div className="home-line-grid" style={{ position: 'relative', display: 'grid', gridTemplateColumns: '1.45fr 1fr', gap: '50px', alignItems: 'center', padding: '60px 62px' }}>
             <div>
-              <div className="home-eyebrow" style={{ fontSize: '14px', letterSpacing: '4px', color: '#D8BE82', fontWeight: 600, marginBottom: '18px' }}>อย่าปล่อยให้เรื่องสำคัญค้างอยู่ในใจนานเกินไป</div>
-              <h2 className="home-line-title" style={{ fontFamily: "'Noto Serif Thai', serif", fontWeight: 700, fontSize: '42px', lineHeight: 1.35, color: '#fff', margin: '0 0 20px' }}>ถ้าวันนี้คุณยังตัดสินใจไม่ลง<br />ให้หมอแจวช่วยดูอีกมุมหนึ่งก่อน</h2>              <p style={{ fontSize: '19px', color: '#C3CEDE', margin: '0 0 34px', maxWidth: '460px' }}>ส่งเรื่องที่คุณกำลังคิดไม่ตกมาได้<br />แล้วเริ่มต้นจากการมองสิ่งที่อยู่ตรงหน้าให้ชัดกว่าเดิม</p>
+              <div className="home-eyebrow" style={{ fontSize: '14px', letterSpacing: '4px', color: '#D8BE82', fontWeight: 600, marginBottom: '18px' }}>อย่าปล่อยให้เรื่องสำคัญค้างอยู่ในใจ</div>
+              <h2 className="home-line-title" style={{ fontFamily: "'Noto Serif Thai', serif", fontWeight: 700, fontSize: '42px', lineHeight: 1.35, color: '#fff', margin: '0 0 20px' }}>เรื่องที่ยังหาคำตอบไม่ได้<br />เปิดดวงให้ชัดก่อนตัดสินใจ</h2>              <p style={{ fontSize: '19px', color: '#C3CEDE', margin: '0 0 34px', maxWidth: '460px' }}>อย่าปล่อยให้เรื่องสำคัญค้างอยู่ในใจ<br />เมื่อพื้นดวงกำลังบอกสิ่งที่คุณควรรู้</p>
               <a href={LINE} className="home-line-cta" style={{ display: 'inline-flex', alignItems: 'center', gap: '12px', background: '#06C755', color: '#fff', textDecoration: 'none', fontWeight: 700, fontSize: '20px', padding: '18px 38px', borderRadius: '999px', boxShadow: '0 14px 30px rgba(6,199,85,.4)' }}>                <span style={{ width: '26px', height: '26px', borderRadius: '7px', background: '#fff', color: '#06C755', fontWeight: 800, fontSize: '14px', display: 'inline-flex', alignItems: 'center', justifyContent: 'center' }}>L</span>
-                ทัก LINE เพื่อเช็กคิว
+                ทัก LINE เพื่อสอบถาม
               </a>
               <div style={{ fontSize: '14px', color: '#8FA0BC', marginTop: '18px' }}>ตอบกลับเองทุกข้อความ · ปรึกษาเบื้องต้นก่อนได้</div>
             </div>
@@ -427,18 +433,18 @@ export function Home() {
         <img src="/assets/dragon-watermark.png" alt="" style={{ position: 'absolute', left: '-160px', top: '-130px', width: '580px', opacity: 0.1, pointerEvents: 'none' }} />
         <div className="home-pricing-grid" style={{ position: 'relative', zIndex: 1, maxWidth: '1200px', margin: '0 auto', padding: '86px 40px', display: 'grid', gridTemplateColumns: '1fr 0.9fr', gap: '60px', alignItems: 'center' }}>
           <div>
-            <div className="home-eyebrow" style={eyebrow}>การปรึกษาส่วนตัว</div>
             <Diamond />
-            <h2 className="home-pricing-title" style={{ fontFamily: "'Noto Serif Thai', serif", fontWeight: 700, fontSize: '42px', lineHeight: 1.3, color: '#15233A', margin: '0 0 22px' }}>หนึ่งคิว<br />สำหรับเรื่องที่คุณไม่อยากปล่อยให้ค้างอยู่ในใจ</h2>
-            <p style={{ fontSize: '18px', color: '#514C3E', margin: 0 }}>คุณไม่จำเป็นต้องเลือกว่าจะถามเรื่องความรัก งาน เงิน หรือธุรกิจก่อน<br />เพราะภายในหนึ่งคิว คุณสามารถนำทุกเรื่องที่กำลังหนักใจมาพูดคุยได้</p>
+            <h2 className="home-pricing-title" style={{ fontFamily: "'Noto Serif Thai', serif", fontWeight: 700, fontSize: '42px', lineHeight: 1.3, color: '#15233A', margin: '0 0 22px' }}>คิวดูดวงส่วนตัว</h2>
+            <p style={{ fontSize: '18px', color: '#514C3E', margin: '0 0 18px' }}>เปิดดวงได้หลายเรื่องภายในคิวเดียว</p>
+            <p style={{ fontSize: '18px', color: '#514C3E', margin: 0 }}>นัดหมายเวลาล่วงหน้า<br />ยืนยันคิวหลังชำระเงิน</p>
           </div>
           <div className="home-pricing-card" style={{ background: '#fff', border: '1px solid #E8DcBC', borderRadius: '24px', padding: '44px 44px 38px', boxShadow: '0 22px 50px rgba(120,95,40,.12)', textAlign: 'center' }}>
-            <h3 style={{ fontFamily: "'Noto Serif Thai', serif", fontWeight: 700, fontSize: '28px', color: '#15233A', margin: '0 0 22px', lineHeight: 1.35 }}>แพ็กเกจปรึกษาส่วนตัว</h3>
+            <h3 style={{ fontFamily: "'Noto Serif Thai', serif", fontWeight: 700, fontSize: '28px', color: '#15233A', margin: '0 0 22px', lineHeight: 1.35 }}>ค่าดูดวง</h3>
             <div style={{ display: 'flex', alignItems: 'baseline', justifyContent: 'center', gap: '8px', marginBottom: '4px' }}>
               <span className="home-pricing-price" style={{ fontFamily: "'Noto Serif Thai', serif", fontSize: '64px', fontWeight: 700, color: '#15233A', lineHeight: 1 }}>{site.priceStart}</span>
               <span style={{ fontSize: '22px', color: '#15233A', fontWeight: 600 }}>บาท</span>
             </div>
-            <div style={{ fontSize: '15px', color: '#8A8068', marginBottom: '22px' }}>ต่อ 1 ครั้ง</div>
+            <div style={{ fontSize: '15px', color: '#8A8068', marginBottom: '22px' }}>/ 1 ครั้ง</div>
             <p style={{ fontSize: '15px', color: '#514C3E', margin: '0 0 28px', lineHeight: 1.75 }}>สำหรับการพูดคุยเรื่องสำคัญที่คุณต้องการรู้ให้ชัด<br />ทั้งความรัก คู่ครอง งาน ธุรกิจ การเงิน ครอบครัว และจังหวะชีวิต</p>
             <div style={{ textAlign: 'left', display: 'flex', flexDirection: 'column', gap: '12px', padding: '22px 0', borderTop: '1px solid #F0E7D3', borderBottom: '1px solid #F0E7D3', marginBottom: '28px' }}>
               {pricingCardIncludes.map((f) => (
@@ -489,10 +495,10 @@ export function Home() {
           <div>
             <div style={{ fontFamily: "'Noto Serif Thai', serif", fontWeight: 600, fontSize: '17px', color: '#fff', marginBottom: '16px' }}>เมนู</div>
             <div style={{ display: 'flex', flexDirection: 'column', gap: '11px' }}>
-              <a href="#services" style={{ color: '#9FB0CB', textDecoration: 'none', fontSize: '15px' }}>เรื่องที่ปรึกษา</a>
+              <a href="#services" style={{ color: '#9FB0CB', textDecoration: 'none', fontSize: '15px' }}>เรื่องที่เปิดดวง</a>
               <a href="#about" style={{ color: '#9FB0CB', textDecoration: 'none', fontSize: '15px' }}>หมอแจว</a>
               <a href="#proof" style={{ color: '#9FB0CB', textDecoration: 'none', fontSize: '15px' }}>กิจกรรม</a>
-              <a href="#pricing" style={{ color: '#9FB0CB', textDecoration: 'none', fontSize: '15px' }}>ค่าปรึกษา</a>
+              <a href="#pricing" style={{ color: '#9FB0CB', textDecoration: 'none', fontSize: '15px' }}>ค่าดูดวง</a>
             </div>
           </div>
           <div>
@@ -504,7 +510,7 @@ export function Home() {
             </div>
             <a href={LINE} style={{ display: 'inline-flex', alignItems: 'center', gap: '9px', marginTop: '18px', background: '#06C755', color: '#fff', textDecoration: 'none', fontWeight: 700, fontSize: '15px', padding: '11px 22px', borderRadius: '999px' }}>
               <span style={{ width: '18px', height: '18px', borderRadius: '5px', background: '#fff', color: '#06C755', fontWeight: 800, fontSize: '11px', display: 'inline-flex', alignItems: 'center', justifyContent: 'center' }}>L</span>
-              ทัก LINE
+              ทัก LINE เพื่อสอบถาม
             </a>
           </div>
         </div>
